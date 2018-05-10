@@ -16,7 +16,7 @@ RadonDB 是一个基于云的 MySQL 数据库产品，它被设计为完全的�
 > * **Automatic Table Sharding**: automatically sharding (partition) across nodes that mini-mizing the complexity of maintenance and operation.
 
 - 分布式事务：支持分布式事务跨分片(分区)，确保整个事务的原子性、一致性、隔离性和持久性(ACID)。
-> * **Distributed Transaction**: supporting distributed transaction across shards (partitions) and securing Atomicity, Consistency, Isolation, Durability (ACID) for whole trans-actrion process.
+> * **Distributed Transaction**: supporting distributed transaction across shards (partitions) and securing Atomicity, Consistency, Isolation, Durability (ACID) for whole trans-action process.
 
 - 连接线程池：预先设置一组已连接的线程，可以利用它们来加速SQL集群和存储节点之间的连接效率；并支持自动重新连接和线程重用。
 > * **Connection Thread Pool**: presetting a set of connected threads that can be lever-aged to accelerating the efficiency of connection between SQL cluster and storage nodes; supporting automatic reconnection and thread reuse.
