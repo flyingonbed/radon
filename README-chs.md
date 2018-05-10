@@ -91,7 +91,7 @@ RadonDB 提供分布式事务处理能力。如果分布式执行器在不同的
 > RadonDB provides distributed transaction capabilities. If the distrubuted executor at different storage nodes and one of the nodes failed to execute, then operation of the rest nodes will be rolled back, This guarantees the atomicity of operating across nodes  and makes the database in a consistent state.
 
 ```Isolation Levels —— 隔离等级```
-RadonDB 实现了一致性级别的 SI (快照隔离，Snapshot Isolation)。只要分布式事务没有提交，或者某些分区已经提交了，那么其他事务就看不到该操作。
+RadonDB 实现了一致性级别的 SI (快照隔离，Snapshot Isolation)。只要分布式事务没有提交，或者只有部分分区已经提交，那么其他事务就看不到该操作。
 > RadonDB achieves the level of SI (Snapshot Isolation) at the level of consistency. As long as a distributed transaction has not commit, or if some of the partitions have committed, the operation is invisible to other transactions.
 
 ``` Transaction with SQL Layer —— SQL 层的事务```
